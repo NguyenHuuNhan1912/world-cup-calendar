@@ -8,7 +8,7 @@
 }
 body {
     font-family: "Recursive", sans-serif;
-    background-image: url('/images/messi2.jpg');
+    background-image: url('../images/messi2.jpg');
     background-repeat: repeat;
 }
 :root {

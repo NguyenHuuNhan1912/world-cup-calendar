@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body {
+    font-family: "Recursive", sans-serif;
+    background-image: url('/images/messi2.jpg');
+    background-repeat: repeat;
+}
+:root {
+    --main-color: rgb(236, 101, 124);
+}
+.main {
+    position: relative;
+}
+.background-calendar {
+    /* position: absolute;
+    inset: 0;
+    z-index: -1; */
+}
+.background {
+    width: 100%;
+}
+
+.wc-calendar {
+    font-size: 10px;
+    padding: 40px;
+    z-index: 1;
+    border: 1px solid white;
+}
+.row {
+    --bs-gutter-x: 40px;
+    --bs-gutter-y: 40px;
+}
+.wc-introduce {
+    display: flex;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.wc-introduce__title {
+    text-align: center;
+    font-size: 6em;
+    /* border: 1px solid red; */
+    z-index: 1;
+    margin-left: 20px;
+}
+.wc-introduce__img {
+    width: 100px;
+}
+.wc-table {
+    /* border: 1px solid red; */
+    padding: 20px;
+    color: white;
+}
+.wc-table__title {
+    font-size: 4em;
+    text-align: center;
+    /* border: 1px solid red; */
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    /* background-color: #0f172a; */
+}
+.wc-table-list {
+
+}
+.wc-table-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.4em;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.wc-table-item:hover {
+    background-color: rgb(62, 62, 223);
+    transform: scale(1.1);
+    box-shadow: 0 0 3px 3px  rgb(62, 62, 223);
+
+}
+.wc-table-item__flag {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+.wc-table-item__title {
+    margin-left: 20px;
+    /* border: 1px solid red; */
+    width: 130px;
+}
+
+
+/* Button */
+.btn {
+    width: 100%;
+    --body-bg: var(--main-color);
+    --btn-gradient: linear-gradient(to right, blue 0%, blueviolet 100%);
+    --btn-txt-color: #ffffff;
+    position: relative;
+    border: none;
+    outline: none;
+    display: block;
+  }
+  
+  .btn-animation {
+    border-radius: 5px;
+  }
+  
+  .btn-animation:hover {
+    cursor: pointer;
+  }
+  
+  .btn-animation span {
+    display: block;
+  }
+  
+  .btn-animation span:nth-child(1) {
+    padding: 2rem 6.5rem;
+    background-image: var(--btn-gradient);
+    border-radius: 5px;
+  }
+  
+  .btn-animation span:nth-child(2),
+  .btn-animation span:nth-child(3),
+  .btn-animation span:nth-child(4) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .btn-animation span:nth-child(4) {
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: var(--btn-gradient);
+    color: var(--btn-txt-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    border-radius: 1px;
+  }
+  
+  .btn-animation:hover span:nth-child(4) {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .btn-animation span:nth-child(3) {
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background-color: var(--body-bg);
+    border-radius: 4px;
+  }
+  
+  .btn-animation span:nth-child(2) {
+    height: 60%;
+    width: 28%;
+    background-color: var(--body-bg);
+    animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  
+    100% {
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+  }
+
+@media screen and (min-width: 321px) and (max-width: 575px){
+    body {
+        background-position: center;
+    }
+    .wc-introduce {
+        margin: 0 20px;
+    }
+    .wc-introduce__img {
+        display: none;
+        
+    }
+    .wc-introduce__title {
+        font-size: 1.8em;
+    }
+    .wc-calendar {
+        padding: 20px;
+    }
+    .row {
+        --bs-gutter-x: 20px;
+        --bs-gutter-y: 20px;
+    }
+    .main {
+        /* display: none; */
+    }
+}

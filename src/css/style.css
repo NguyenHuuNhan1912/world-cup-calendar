@@ -1,213 +1,362 @@
 @import url("https://fonts.googleapis.com/css2?family=Recursive:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style-type: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
 }
+
 body {
-    font-family: "Recursive", sans-serif;
-    background-image: url('../images/messi2.jpg');
-    background-repeat: repeat;
+  font-family: "Recursive", sans-serif;
+  background-image: url('../images/messi2.jpg');
+  background-repeat: repeat;
 }
+
 :root {
-    --main-color: rgb(236, 101, 124);
+  --main-color: rgb(236, 101, 124);
 }
+
 .main {
-    position: relative;
+  position: relative;
 }
+
 .background-calendar {
-    /* position: absolute;
+  /* position: absolute;
     inset: 0;
     z-index: -1; */
 }
+
 .background {
-    width: 100%;
+  width: 100%;
 }
 
 .wc-calendar {
-    font-size: 10px;
-    padding: 40px;
-    z-index: 1;
-    border: 1px solid white;
+  font-size: 10px;
+  padding: 40px;
+  z-index: 1;
+  border: 1px solid white;
 }
+
 .row {
-    --bs-gutter-x: 40px;
-    --bs-gutter-y: 40px;
+  --bs-gutter-x: 40px;
+  --bs-gutter-y: 40px;
 }
+
 .wc-introduce {
-    display: flex;
-    background-color: var(--main-color);
-    color: white;
-    padding: 10px;
-    border-radius: 100px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
 }
+
 .wc-introduce__title {
-    text-align: center;
-    font-size: 6em;
-    /* border: 1px solid red; */
-    z-index: 1;
-    margin-left: 20px;
+  text-align: center;
+  font-size: 6em;
+  /* border: 1px solid red; */
+  z-index: 1;
+  margin-left: 20px;
 }
+
 .wc-introduce__img {
-    width: 100px;
+  width: 100px;
 }
+
 .wc-table {
-    /* border: 1px solid red; */
-    padding: 20px;
-    color: white;
+  /* border: 1px solid red; */
+  color: white;
 }
+
 .wc-table__title {
-    font-size: 4em;
-    text-align: center;
-    /* border: 1px solid red; */
-    padding: 20px;
-    border-radius: 5px;
-    background-color: var(--main-color);
-    /* background-color: #0f172a; */
+  font-size: 4em;
+  text-align: center;
+  /* border: 1px solid red; */
+  padding: 20px;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  /* background-color: #0f172a; */
 }
-.wc-table-list {
 
-}
+.wc-table-list {}
+
 .wc-table-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.4em;
-    /* border: 1px solid red; */
-    margin-top: 20px;
-    padding: 10px;
-    background-color: var(--main-color);
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4em;
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 }
+
 .wc-table-item:hover {
-    background-color: rgb(62, 62, 223);
-    transform: scale(1.1);
-    box-shadow: 0 0 3px 3px  rgb(62, 62, 223);
+  background-color: rgb(62, 62, 223);
+  /* transform: scale(1.1); */
+  box-shadow: 0 0 3px 3px rgb(62, 62, 223);
 
 }
+
 .wc-table-item__flag {
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-}
-.wc-table-item__title {
-    margin-left: 20px;
-    /* border: 1px solid red; */
-    width: 130px;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
 }
 
+.wc-table-item__title {
+  margin-left: 20px;
+  /* border: 1px solid red; */
+  width: 130px;
+}
+
+/* Fight */
+.wc-calendar-watch {
+  padding: 40px;
+  font-size: 10px;
+}
+
+.row {
+  --bs-gutter-x: 40px;
+  --bs-gutter-y: 40px;
+}
+
+.wc-calendar-competition {
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.wc-calendar-watch-title {
+  /* border: 1px solid red; */
+  color: white;
+  font-size: 3em;
+  padding: 15px 30px;
+  display: inline-block;
+  border-radius: 100px;
+  background-color: red;
+}
+
+.wc-calendar-competition__group {
+  font-size: 2.4em;
+  text-align: center;
+
+}
+
+.wc-calendar-competition-flag {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.wrap-competition {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px 0;
+}
+
+.wc-calendar-competition__fight {
+  display: flex;
+  align-items: center;
+}
+
+.wc-calendar-competition-day {
+  text-align: center;
+  font-size: 2.4em;
+}
+
+.wc-calendar-competition-title {
+  font-size: 2.4em;
+  margin-right: 10px;
+}
+.wc-calendar-competition-title--right {
+  margin-left: 10px;
+}
+
+.wc-calendar-competition-clock {
+  font-size: 2.4em;
+}
+/* edit width */
+.wc-calendar-competition-title, .wc-calendar-competition-title--right {
+  /* border: 1px solid red; */
+  width: 250px;
+}
+.wc-calendar-competition-title {
+  text-align: right;
+}
+.wc-calendar-competition-title--right {
+  text-align: left;
+}
 
 /* Button */
 .btn {
-    width: 100%;
-    --body-bg: var(--main-color);
-    --btn-gradient: linear-gradient(to right, blue 0%, blueviolet 100%);
-    --btn-txt-color: #ffffff;
-    position: relative;
-    border: none;
-    outline: none;
-    display: block;
-  }
-  
-  .btn-animation {
-    border-radius: 5px;
-  }
-  
-  .btn-animation:hover {
-    cursor: pointer;
-  }
-  
-  .btn-animation span {
-    display: block;
-  }
-  
-  .btn-animation span:nth-child(1) {
-    padding: 2rem 6.5rem;
-    background-image: var(--btn-gradient);
-    border-radius: 5px;
-  }
-  
-  .btn-animation span:nth-child(2),
-  .btn-animation span:nth-child(3),
-  .btn-animation span:nth-child(4) {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .btn-animation span:nth-child(4) {
-    width: calc(100% - 16px);
-    height: calc(100% - 16px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: var(--btn-gradient);
-    color: var(--btn-txt-color);
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.5rem;
-    transition: all 0.3s ease;
-    border-radius: 1px;
-  }
-  
-  .btn-animation:hover span:nth-child(4) {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-  }
-  
-  .btn-animation span:nth-child(3) {
-    width: calc(100% - 4px);
-    height: calc(100% - 4px);
-    background-color: var(--body-bg);
-    border-radius: 4px;
-  }
-  
-  .btn-animation span:nth-child(2) {
-    height: 60%;
-    width: 28%;
-    background-color: var(--body-bg);
-    animation: rotate 2s linear infinite;
-  }
-  
-  @keyframes rotate {
-    0% {
-      transform: translate(-50%, -50%) rotate(0deg);
-    }
-  
-    100% {
-      transform: translate(-50%, -50%) rotate(180deg);
-    }
+  width: 100%;
+  --body-bg: var(--main-color);
+  --btn-gradient: linear-gradient(to right, blue 0%, blueviolet 100%);
+  --btn-txt-color: #ffffff;
+  position: relative;
+  border: none;
+  outline: none;
+  display: block;
+}
+
+.btn-animation {
+  border-radius: 5px;
+}
+
+.btn-animation:hover {
+  cursor: pointer;
+}
+
+.btn-animation span {
+  display: block;
+}
+
+.btn-animation span:nth-child(1) {
+  padding: 2rem 6.5rem;
+  background-image: var(--btn-gradient);
+  border-radius: 5px;
+}
+
+.btn-animation span:nth-child(2),
+.btn-animation span:nth-child(3),
+.btn-animation span:nth-child(4) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-animation span:nth-child(4) {
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: var(--btn-gradient);
+  color: var(--btn-txt-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  border-radius: 1px;
+}
+
+.btn-animation:hover span:nth-child(4) {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.btn-animation span:nth-child(3) {
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  background-color: var(--body-bg);
+  border-radius: 4px;
+}
+
+.btn-animation span:nth-child(2) {
+  height: 60%;
+  width: 28%;
+  background-color: var(--body-bg);
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
   }
 
-@media screen and (min-width: 321px) and (max-width: 575px){
-    body {
-        background-position: center;
-    }
-    .wc-introduce {
-        margin: 0 20px;
-    }
-    .wc-introduce__img {
-        display: none;
-        
-    }
-    .wc-introduce__title {
-        font-size: 1.8em;
-    }
-    .wc-calendar {
-        padding: 20px;
-    }
-    .row {
-        --bs-gutter-x: 20px;
-        --bs-gutter-y: 20px;
-    }
-    .main {
-        /* display: none; */
-    }
+  100% {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  body {
+    background-position: center;
+  }
+
+  .wc-calendar-watch {
+    padding: 15px;
+    font-size: 6px;
+  }
+  .wc-calendar-competition-flag {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+  }
+  .wc-introduce {
+    margin: 0 15px;
+  }
+
+  .wc-introduce__img {
+    display: none;
+  }
+
+  .wc-introduce {
+    border-radius: 10px;
+  }
+
+  .wc-introduce__title {
+    font-size: 3em;
+  }
+
+  .wc-calendar {
+    padding: 15px;
+  }
+
+  .wc-table-item {
+    margin-top: 15px;
+  }
+
+  .wc-table__title {
+    padding: 15px;
+  }
+
+  .row {
+    --bs-gutter-x: 15px;
+    --bs-gutter-y: 15px;
+  }
+
+  .main {
+    /* display: none; */
+  }
+  .wc-calendar-competition-title, .wc-calendar-competition-title--right {
+    /* border: 1px solid red; */
+    width: 80px;
+  }
+  .wc-calendar-competition-title {
+    text-align: right;
+  }
+  .wc-calendar-competition-title--right {
+    text-align: left;
+  }
+  
+  /* Fight */
+  .wc-calendar-competition__group {
+    
+  }
+
+  .wc-calendar-competition-title {
+    
+    
+  }
+
+  .wc-calendar-competition-clock {
+    margin: 5px;
+  }
+  .wc-calendar-watch-title {
+    padding: 10px 20px;
+    border-radius: 100px;
+    background-color: var(--main-color);
+  }
+  .wc-calendar-competition-day {}
 }
